@@ -28,6 +28,7 @@ const LoginForm = ({ onLogin }: LoginFormProps) => {
         document: "12.345.678/0001-90",
         email: email,
         phone: "(11) 99999-9999",
+        whatsapp: "(11) 99999-9999",
         address: {
           street: "Rua das Palmeiras",
           number: "123",
@@ -48,36 +49,36 @@ const LoginForm = ({ onLogin }: LoginFormProps) => {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="space-y-2">
-        <Label htmlFor="email" className="text-sm font-medium text-gray-700">
+        <Label htmlFor="email" className="text-sm font-medium text-gray-300">
           Email
         </Label>
         <div className="relative">
-          <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+          <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
           <Input
             id="email"
             type="email"
             placeholder="seu@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="pl-10"
+            className="pl-10 bg-gray-800 border-gray-700 text-white placeholder-gray-500"
             required
           />
         </div>
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="password" className="text-sm font-medium text-gray-700">
+        <Label htmlFor="password" className="text-sm font-medium text-gray-300">
           Senha
         </Label>
         <div className="relative">
-          <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+          <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
           <Input
             id="password"
             type="password"
             placeholder="••••••••"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="pl-10"
+            className="pl-10 bg-gray-800 border-gray-700 text-white placeholder-gray-500"
             required
           />
         </div>

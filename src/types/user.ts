@@ -6,6 +6,7 @@ export interface User {
   document: string; // CPF/CNPJ
   email: string;
   phone: string;
+  whatsapp: string; // Novo campo WhatsApp
   address: {
     street: string;
     number: string;

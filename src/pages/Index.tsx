@@ -40,31 +40,35 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100">
+    <div className="min-h-screen bg-black">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-md mx-auto">
           <div className="text-center mb-8">
             <div className="mb-6">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl mx-auto flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">iR</span>
+              <div className="w-32 h-32 mx-auto flex items-center justify-center mb-4">
+                <img 
+                  src="/lovable-uploads/9ecf861a-8ac1-4236-9234-6bfc493b429d.png" 
+                  alt="iOS Repair Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">
+              <h1 className="text-3xl font-bold text-white mb-2">
                 iOS Repair
               </h1>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-400 text-sm">
                 Especialista em Placas de iPhone
               </p>
             </div>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-            <div className="flex mb-6 bg-gray-100 rounded-lg p-1">
+          <div className="bg-gray-900 rounded-2xl shadow-xl p-8 border border-gray-800">
+            <div className="flex mb-6 bg-gray-800 rounded-lg p-1">
               <button
                 onClick={() => setAuthMode('login')}
                 className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all ${
                   authMode === 'login'
-                    ? 'bg-white text-blue-600 shadow-sm'
-                    : 'text-gray-600 hover:text-gray-900'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'text-gray-400 hover:text-white'
                 }`}
               >
                 Entrar
@@ -73,8 +77,8 @@ const Index = () => {
                 onClick={() => setAuthMode('register')}
                 className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all ${
                   authMode === 'register'
-                    ? 'bg-white text-blue-600 shadow-sm'
-                    : 'text-gray-600 hover:text-gray-900'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'text-gray-400 hover:text-white'
                 }`}
               >
                 Cadastrar
