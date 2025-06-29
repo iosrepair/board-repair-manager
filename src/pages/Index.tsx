@@ -47,7 +47,7 @@ const Index = () => {
             <div className="mb-6">
               <div className="w-32 h-32 mx-auto flex items-center justify-center mb-4">
                 <img 
-                  src="/lovable-uploads/9ecf861a-8ac1-4236-9234-6bfc493b429d.png" 
+                  src="/lovable-uploads/e5f91a40-ab14-4d7e-94e0-0453c27ffe66.png" 
                   alt="iOS Repair Logo" 
                   className="w-full h-full object-contain"
                 />
